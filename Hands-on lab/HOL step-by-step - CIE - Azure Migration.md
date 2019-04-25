@@ -10,7 +10,7 @@
   - [Exercise 1: Sign Up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
     - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
     - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
-  - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-database-offline)
+  - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-sql-database-offline)
     - [Help references](#help-references)
     - [Task 1: Create Azure SQL Database](#task-2-create-azure-sql-database)
     - [Task 2: Create Azure Database Migration Service](#task-2-azure-database-migration-service)
