@@ -10,7 +10,7 @@
   - [Exercise 1: Sign Up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
     - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
     - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
-  - [Exercise 2: Migrate SQL server to azure SQL db offline](#exercise-2-migrate-sql-server-to-azure-db-offline)
+  - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-database-offline)
     - [Help references](#help-references)
     - [Task 1: Create Azure SQL Database](#task-2-create-azure-sql-database)
     - [Task 2: Create Azure Database Migration Service](#task-2-azure-database-migration-service)
@@ -55,13 +55,39 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 1. Click on **azure-migration-62244** Resource Group which contains the pre-deployed on-premises infrastructure.Here, 62244 is unique ID and it could be different.
    ![](Images/6_azuremigrationrg.jpg)
    
-## Exercise 2: Migrate SQL Server to Azure SQL DB Offline
+## Exercise 2: Migrate SQL Server to Azure SQL Database Offline
 
 In this exercise, you will deploy **SQL Database** and **Azure Database Migration Service**. After that you will validate and Migrate the **schema** of on-prem(SQL Server 2008 R2) AdventureWorks2008R2 database to Azure SQL Database using Database Migration Assistant. Then you will migrate **on-prem** offline **AdventureWorks2008R2** database to **Azure SQL Database** using Azure Migration Service of azure.
 
+### Task 1: Create Azure SQL Database
+
+1. Go to https://portal.azure.com and login with your azure credentials you got on lab details page.
+1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. </br>
+   ![](Images/6_azuremigrationrg.jpg)
+1. Click on the **Create** button and provide the following details on Basic tab.</br>
+   ![](Images/6_azuremigrationrg.jpg)
+    * Subscription: Click on drop down icon and then select the existing subscription.
+   * Resource Group: Select existing RG, azure-migration-62244, here 62244 is unique id and could different for you.
+   * Database Name: AdventureWorks2008R2
+   * Server: Click on **Create new**, then provide the required details and click on **Select** button.
+      * Server name: sqlserver62244, here replace 62244 with your unique ID i.e. sqlserver<uniqueID>
+      * Server admin login: demouser
+      * Password: demo@pass123
+      * Location: East US, use the Resource Group location. </br>
+        ![](Images/6_azuremigrationrg.jpg)
+   * Want to use SQL elastic pool: No
+   * Compute + Storage: Click Configure database.
+     * Set the DTUs on **100**, PLease do not try with diffrent DTUs, It will be disallowed by policy during deployment.
+     * Data Max size: 250 GB
+   
+      
+      
+   
+
+
 ### Task 2: Run on-prem AdventureWorks2008R2 SQL Db Assessment
 
-1. Go to https://portal.azure.com and login the you azure username and password as shown in previous steps.
+1. Go to https://portal.azure.com and login.
 1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS name using RDP . You can also find sqlvm admin username, password and sqlvm dns name on lab details page.
    * Username: **demouser**
    * Password: **demo@pass123**
@@ -90,9 +116,8 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
         ![](Images/14_connectwithsource.jpg)
     * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner. 
       ![](Images/14_connectwithsource.jpg)
-1. Before migrating the schema of AdventureWorks DB, we need to deploy Azure SQL Database and Azure Database Migration Service in azure.
-1. Go to https://portal.azure.com and login with your azure credentials.
-1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. </br>
+
+
 
    
 
