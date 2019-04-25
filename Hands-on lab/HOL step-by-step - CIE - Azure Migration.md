@@ -43,7 +43,7 @@ Here, you will sign up for the lab.
 
   Please ensure to take the values assigned to your deployment.
   
-### Task 2 : Login to your Azure Portal and Verify access to the Subscription
+### Task 2: Login to Azure Portal and Verify access to the Subscription
 
 In this task, you will log into the **Azure Portal** using your Azure credentials and you will verify the type of role you are assigned in this Subscription.
 1. **Navigate** to https://portal.azure.com and login (from the previous step).
