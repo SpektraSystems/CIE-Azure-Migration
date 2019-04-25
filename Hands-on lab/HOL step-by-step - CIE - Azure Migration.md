@@ -64,7 +64,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS using RDP . You can see sqlvm admin username,password and sqlvm dns name on lab details page.
 1. After login to sql vm. Click on the **SQL Server Management Studio(SSMS)** icon on taskbar.
    ![](Images/7_ssms.jpg)
-1. When SSMS popup for connect to database, then click on **Connect** button by keeping default values. Please note the default sql server name(SQL2008R2-VM) to use it later.
+1. When SSMS popup for connect to database, then click on **Connect** button by keeping default values. Please note the default sql server name(SQL2008R2-VM) to use it later. </br>
    ![](Images/8_connect.jpg)
 1. Now check and verify **AdventureWorks2008R2** database is preloaded in Object Explorer window.
    ![](Images/9_verifydb.jpg)
