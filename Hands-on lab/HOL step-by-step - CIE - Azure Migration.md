@@ -61,7 +61,9 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 ### Task 1: Validate and Migrate the AdventureWorks2008R2 Schema
 
 1. Go to https://portal.azure.com and login the you azure username and password as shown in previous steps.
-1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS using RDP . You can see sqlvm admin username,password and sqlvm dns name on lab details page.
+1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS name using RDP . You can also find sqlvm admin username, password and sqlvm dns name on lab details page.
+  * Username: **demouser**
+  * Password: **demo@pass123**
 1. After login to sql vm. Click on the **SQL Server Management Studio(SSMS)** icon on taskbar.
    ![](Images/7_ssms.jpg)
 1. When SSMS popup for connect to database, then click on **Connect** button by keeping default values. Please note the default sql server name(SQL2008R2-VM) to use it later. </br>
