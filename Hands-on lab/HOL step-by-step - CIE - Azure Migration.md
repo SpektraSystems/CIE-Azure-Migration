@@ -10,9 +10,15 @@
   - [Exercise 1: Sign Up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
     - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
     - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
-  - [Exercise 2: Migrate SQL server to azure SQL db offline](#exercise-2-migrate-sql-server-to-azure=db-offline)
+  - [Exercise 2: Migrate SQL server to azure SQL db offline](#exercise-2-migrate-sql-server-to-azure-db-offline)
     - [Help references](#help-references)
-    - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
+    - [Task 1: Validate and Migrate the AdventureWorks2008R2 Schema](#task-1-validate-and-migrate-the-adventureWorks2008R2-Schema)
+    - [Task 2: ](#task-2-)
+    - [Task 3: ](#task-3-)
+    - [Task 4: ](#task-4-)
+    - [Task 5: ](#task-5-)
+    - [Task 6: ](#task-6-)
+    - [Task 7: ](#task-7-)
   
 
 <!-- /TOC -->
@@ -52,3 +58,16 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 
 In this exercise, you will deploy **SQL Database** and **Azure Database Migration Service**. After that you will validate and Migrate the **schema** of on-prem(SQL Server 2008 R2) AdventureWorks2008R2 database to Azure SQL Database using Database Migration Assistant. Then you will migrate **on-prem** offline **AdventureWorks2008R2** database to **Azure SQL Database** using Azure Migration Service of azure.
 
+### Task 1: Validate and Migrate the AdventureWorks2008R2 Schema
+
+1. Go to https://portal.azure.com and login the you azure username and password as shown in previous steps.
+1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS using RDP . You can see sqlvm admin username,password and sqlvm dns name on lab details page.
+1. After login to sql vm. Click on the **SQL Server Management Studio(SSMS)** icon on taskbar.
+   ![](Images/7_ssms.jpg)
+1. When SSMS popup for connect to database, then click on **Connect** button by keeping default values. Please note the default sql server name(SQL2008R2-VM) to use it later.
+   ![](Images/8_connect.jpg)
+1. Now check and verify **AdventureWorks2008R2** database is preloaded in Object Explorer window.
+   ![](Images/9_verifydb.jpg)
+1. Now, click on the **Data Migration Assistant(DMA)** icon on taskbar.
+   ![](Images/10_datamigrationassitant.jpg)
+    In this step we will create New Assessment project, select **Assessment** in project type.
