@@ -40,7 +40,7 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 1. **Navigate** to https://portal.azure.com and login (from the previous step).
 1. **Enter** the **Username** which was displayed in the previous window and **click** on **Next**.<br/>
     ![](Images/4_username.jpg)
-1. In the Stay signed in? pop-up window, click **No**. **Enter** the **Password** and click on **Sign in**.<br/>
+1. **Enter** the **Password** and click on **Sign in**. In the Stay signed in? pop-up window click on **Yes**.
     ![](Images/5_password.jpg)
 1. Click on Resource Groups in left panel. You will see one Resource Group on which you have access. 
 1. Click on **azure-migration-62244** Resource Group which contains the pre-deployed on-premises infrastructure.Here, 62244 is unique ID and it could be different.
