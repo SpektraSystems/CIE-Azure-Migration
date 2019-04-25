@@ -8,15 +8,17 @@
   - [Solution architecture](#solution-architecture)
   - [Requirements](#requirements)
   - [Exercise 1: Sign Up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
-    - [Help references](#help-references)
     - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
     - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
+  - [Exercise 2: Migrate SQL server to azure SQL db offline](#exercise-2-migrate-sql-server-to-azure=db-offline)
+    - [Help references](#help-references)
+    - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
   
 
 <!-- /TOC -->
 
 ## Exercise 1: Sign Up for pre configured environment and verify subscription access
-
+**Duration:** 5 Minutes
 In this exercise, you will create a source environment and verify the access on azure subscription.
 
 ### Task 1: Sign Up for pre configured environment
@@ -45,3 +47,8 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 1. Click on Resource Groups in left panel. You will see one Resource Group on which you have access. 
 1. Click on **azure-migration-62244** Resource Group which contains the pre-deployed on-premises infrastructure.Here, 62244 is unique ID and it could be different.
    ![](Images/6_azuremigrationrg.jpg)
+   
+## Exercise 2: Migrate SQL Server to Azure SQL DB Offline
+
+In this exercise, you will deploy **SQL Database** and **Azure Database Migration Service**. After that you will validate and Migrate the **schema** of on-prem(SQL Server 2008 R2) AdventureWorks2008R2 database to Azure SQL Database using Database Migration Assistant. Then you will migrate **on-prem** offline **AdventureWorks2008R2** database to **Azure SQL Database** using Azure Migration Service of azure.
+
