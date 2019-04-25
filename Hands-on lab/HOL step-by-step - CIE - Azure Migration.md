@@ -19,8 +19,7 @@
 
 In this exercise, you will create a source environment.
 1.	**Navigate** to bitly link which was provided by instructor and register by providing all required information and **clicking** on **SUBMIT button**.<br/>
-
-<kbd>![](Images/1_signup.jpg)</kbd>
+   <kbd>![](Images/1_signup.jpg)</kbd>
 
 2. Once registration is accepted, you will be automatically redirected to the lab details page. Now, it is advised to save a copy of the URL of lab details page in browser. **Click** on the **Launch Lab** button to start the lab.<br/>
 
