@@ -85,7 +85,9 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    * On Review + Create tab, review inputes which you gave and then, click on the **Create** button. </br>
      ![](Images/20_ceate.jpg)  
      
-   
+### Task 2: Create Azure Database Migration Service
+
+1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service** 
       
       
    
@@ -120,7 +122,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Authentication type: **Windows Authentication**
       * Check both connection properties **Encrypt connection** and **Trust server certificate**. </br>
         ![](Images/14_connectwithsource.jpg)
-    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner. 
+    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner.</br> 
       ![](Images/14_connectwithsource.jpg)
 
 
