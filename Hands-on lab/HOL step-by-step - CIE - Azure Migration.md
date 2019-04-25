@@ -12,8 +12,9 @@
     - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
   - [Exercise 2: Migrate SQL server to azure SQL db offline](#exercise-2-migrate-sql-server-to-azure-db-offline)
     - [Help references](#help-references)
-    - [Task 1: Validate and Migrate the AdventureWorks2008R2 Schema](#task-1-validate-and-migrate-the-adventureWorks2008R2-Schema)
-    - [Task 2: ](#task-2-)
+    - [Task 1: Create Azure SQL Database](#task-2-create-azure-sql-database)
+    - [Task 2: Create Azure Database Migration Service](#task-2-azure-database-migration-service)
+    - [Task 3: Run on-prem AdventureWorks2008R2 SQL Db Assessment](#task-1-run-on-prem-adventureWorks2008R2-SQL-db-assessment)
     - [Task 3: ](#task-3-)
     - [Task 4: ](#task-4-)
     - [Task 5: ](#task-5-)
@@ -58,12 +59,12 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 
 In this exercise, you will deploy **SQL Database** and **Azure Database Migration Service**. After that you will validate and Migrate the **schema** of on-prem(SQL Server 2008 R2) AdventureWorks2008R2 database to Azure SQL Database using Database Migration Assistant. Then you will migrate **on-prem** offline **AdventureWorks2008R2** database to **Azure SQL Database** using Azure Migration Service of azure.
 
-### Task 1: Validate and Migrate the AdventureWorks2008R2 Schema
+### Task 2: Run on-prem AdventureWorks2008R2 SQL Db Assessment
 
 1. Go to https://portal.azure.com and login the you azure username and password as shown in previous steps.
 1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS name using RDP . You can also find sqlvm admin username, password and sqlvm dns name on lab details page.
-  * Username: **demouser**
-  * Password: **demo@pass123**
+   * Username: **demouser**
+   * Password: **demo@pass123**
 1. After login to sql vm. Click on the **SQL Server Management Studio(SSMS)** icon on taskbar.
    ![](Images/7_ssms.jpg)
 1. When SSMS popup for connect to database, then click on **Connect** button by keeping default values. Please note the default sql server name(SQL2008R2-VM) to use it later. </br>
@@ -87,8 +88,14 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Authentication type: **Windows Authentication**
       * Check both connection properties **Encrypt connection** and **Trust server certificate**. </br>
         ![](Images/14_connectwithsource.jpg)
-    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner. </br>
-      * ![](Images/14_connectwithsource.jpg)
+    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner. 
+      ![](Images/14_connectwithsource.jpg)
+1. Before migrating the schema of AdventureWorks DB, we need to deploy Azure SQL Database and Azure Database Migration Service in azure.
+1. Go to https://portal.azure.com and login with your azure credentials.
+1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. </br>
+
+   
+
       
     
      
