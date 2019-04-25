@@ -12,7 +12,7 @@
     - [Task 2: Login to Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
   - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-sql-database-offline)
     - [Help references](#help-references)
-    - [Task 1: Create Azure SQL Database](#task-2-create-azure-sql-database)
+    - [Task 1: Create Azure SQL Database](#task-1-create-azure-sql-database)
     - [Task 2: Create Azure Database Migration Service](#task-2-azure-database-migration-service)
     - [Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment](#task-3-run-on-prem-adventureworks2008r2-sql-db-assessment)
     - [Task 3: ](#task-3-)
