@@ -20,8 +20,7 @@
   - [Task 5: ](#task-5-)
   - [Task 6: ](#task-6-)
   - [Task 7: ](#task-7-)
-  
-
+ 
 <!-- /TOC -->
 
 ## Exercise 1: Sign up for pre configured environment and verify subscription access
@@ -66,7 +65,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/16_createaresource.jpg)
 1. Click on the **Create** button and provide the following details on Basic tab.</br>
    ![](Images/17_create.jpg)
-    * Subscription: Click on drop down icon and then select the existing subscription.
+   * Subscription: Click on drop down icon and then select the existing subscription.
    * Resource Group: Select existing RG, azure-migration-62244, here 62244 is unique id and could different for you.
    * Database Name: AdventureWorks2008R2
    * Server: Click on **Create new**, then provide the required details and click on **Select** button.
@@ -87,7 +86,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
      
 ### Task 2: Create Azure Database Migration Service
 
-1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service** 
+1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service**.
       
       
    
