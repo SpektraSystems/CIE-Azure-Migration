@@ -62,10 +62,10 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 ### Task 1: Create Azure SQL Database
 
 1. Go to https://portal.azure.com and login with your azure credentials you got on lab details page.
-1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. </br>
-   ![](Images/6_azuremigrationrg.jpg)
+1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. Feel the details and click on the **Review + Create** button </br>
+   ![](Images/16_createaresource.jpg)
 1. Click on the **Create** button and provide the following details on Basic tab.</br>
-   ![](Images/6_azuremigrationrg.jpg)
+   ![](Images/17_create.jpg)
     * Subscription: Click on drop down icon and then select the existing subscription.
    * Resource Group: Select existing RG, azure-migration-62244, here 62244 is unique id and could different for you.
    * Database Name: AdventureWorks2008R2
@@ -74,11 +74,17 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Server admin login: demouser
       * Password: demo@pass123
       * Location: East US, use the Resource Group location. </br>
-        ![](Images/6_azuremigrationrg.jpg)
+        ![](Images/18_select.jpg)
    * Want to use SQL elastic pool: No
-   * Compute + Storage: Click Configure database.
+   * Compute + Storage: Click Configure database. Set the rebow requirements and then click on **Apply** button.
      * Set the DTUs on **100**, PLease do not try with diffrent DTUs, It will be disallowed by policy during deployment.
-     * Data Max size: 250 GB
+     * Data Max size: 250 GB </br>
+       ![](Images/19_apply.jpg)
+   * Click on the **Review + Create** button </br>
+     ![](Images/20_reviewcreate.jpg)
+   * On Review + Create tab, review your inputes and then click on the **Create** button. </br>
+     ![](Images/20_ceate.jpg)  
+     
    
       
       
