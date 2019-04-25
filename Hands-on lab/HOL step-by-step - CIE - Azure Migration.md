@@ -7,14 +7,14 @@
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
   - [Requirements](#requirements)
-  - [Exercise 1: Sign Up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
+  - [Exercise 1: Sign up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
     - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
-    - [Task 2: Login to your Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
+    - [Task 2: Login to Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
   - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-sql-database-offline)
     - [Help references](#help-references)
     - [Task 1: Create Azure SQL Database](#task-2-create-azure-sql-database)
     - [Task 2: Create Azure Database Migration Service](#task-2-azure-database-migration-service)
-    - [Task 3: Run on-prem AdventureWorks2008R2 SQL Db Assessment](#task-1-run-on-prem-adventureWorks2008R2-SQL-db-assessment)
+    - [Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment](#task-3-run-on-prem-adventureworks2008r2-sql-db-assessment)
     - [Task 3: ](#task-3-)
     - [Task 4: ](#task-4-)
     - [Task 5: ](#task-5-)
@@ -24,11 +24,11 @@
 
 <!-- /TOC -->
 
-## Exercise 1: Sign Up for pre configured environment and verify subscription access
+## Exercise 1: Sign up for pre configured environment and verify subscription access
 **Duration:** 5 Minutes
 In this exercise, you will create a source environment and verify the access on azure subscription.
 
-### Task 1: Sign Up for pre configured environment
+### Task 1: Sign up for pre configured environment
 
 Here, you will sign up for the lab.
 
@@ -43,7 +43,7 @@ Here, you will sign up for the lab.
 
   Please ensure to take the values assigned to your deployment.
   
-### Task 2: Login to your Azure Portal and Verify access to the Subscription
+### Task 2 : Login to your Azure Portal and Verify access to the Subscription
 
 In this task, you will log into the **Azure Portal** using your Azure credentials and you will verify the type of role you are assigned in this Subscription.
 1. **Navigate** to https://portal.azure.com and login (from the previous step).
@@ -76,13 +76,13 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Location: East US, use the Resource Group location. </br>
         ![](Images/18_select.jpg)
    * Want to use SQL elastic pool: No
-   * Compute + Storage: Click Configure database. Set the rebow requirements and then click on **Apply** button.
+   * Compute + Storage: click Configure database. Set the below requirements and then click on **Apply** button.
      * Set the DTUs on **100**, PLease do not try with diffrent DTUs, It will be disallowed by policy during deployment.
      * Data Max size: 250 GB </br>
        ![](Images/19_apply.jpg)
    * Click on the **Review + Create** button </br>
      ![](Images/20_reviewcreate.jpg)
-   * On Review + Create tab, review your inputes and then click on the **Create** button. </br>
+   * On Review + Create tab, review inputes which you gave and then, click on the **Create** button. </br>
      ![](Images/20_ceate.jpg)  
      
    
@@ -91,7 +91,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    
 
 
-### Task 2: Run on-prem AdventureWorks2008R2 SQL Db Assessment
+### Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment
 
 1. Go to https://portal.azure.com and login.
 1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS name using RDP . You can also find sqlvm admin username, password and sqlvm dns name on lab details page.
