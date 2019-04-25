@@ -73,7 +73,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 1. Now, click on the **Data Migration Assistant(DMA)** icon on taskbar.
    ![](Images/10_datamigrationassitant.jpg)
 1. In this step, we will create new assessment project.
-    * Click on the + icon to create new assessment project.
+    * Click on the + icon to create new assessment project. </br>
       ![](Images/11_new.jpg)
     * Select **Assessment** in project type. Feel the values and click on **Create** button.
       * Project Name: **AzureDMSMigration**
@@ -87,6 +87,9 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Authentication type: **Windows Authentication**
       * Check both connection properties **Encrypt connection** and **Trust server certificate**. </br>
         ![](Images/14_connectwithsource.jpg)
+    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner. </br>
+      * ![](Images/14_connectwithsource.jpg)
+      
     
      
     
