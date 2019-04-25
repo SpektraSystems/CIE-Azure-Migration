@@ -72,10 +72,12 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/9_verifydb.jpg)
 1. Now, click on the **Data Migration Assistant(DMA)** icon on taskbar.
    ![](Images/10_datamigrationassitant.jpg)
-1. In this step we will create New Assessment project, select **Assessment** in project type.
-    * Project Name: **AzureDMSMigration**
-    * Source server type: **SQL Server**
-    * Target server type: Azure **SQL Database** </br>
-      ![](Images/11_new.jpg)
+1. In this step, we will create New Assessment project.
+    * Select **Assessment** in project type. Feel the values and click on **Create** button.
+      * Project Name: **AzureDMSMigration**
+      * Source server type: **SQL Server**
+      * Target server type: Azure **SQL Database** </br>
+        ![](Images/11_new.jpg)
+    
    
   
