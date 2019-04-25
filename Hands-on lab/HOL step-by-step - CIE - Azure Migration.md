@@ -25,7 +25,6 @@ In this exercise, you will create a source environment.
   <kbd>![](Images/2_launchlab.jpg)</kbd>
 
 3. You will see the environment details soon below.<br/>
-
-<kbd>![](Images/3_labdetails.jpg)</kbd>
+  <kbd>![](Images/3_labdetails.jpg)</kbd>
 
 Please ensure to take the values assigned to your deployment.
