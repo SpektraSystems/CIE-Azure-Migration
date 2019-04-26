@@ -83,7 +83,8 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
      ![](Images/20_reviewcreate.jpg)
    * On Review + Create tab, review inputes which you gave and then, click on the **Create** button. </br>
      ![](Images/20_ceate.jpg)  
-     
+1. After deployment is completed, go to the Azure AdventureWorks2008R2 database and copy the server name somewhere for later use.   
+  
 ### Task 2: Create azure database migration service
 
 1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service**. Then, select  **Azure Database Migration Service**.  </br>
@@ -162,6 +163,15 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/29_deployschema.jpg)
 1. After few second you will see schema migration is completed.
    ![](Images/30_schemamigrationcomplete.jpg)
+   
+### Task 5: Create a migration project
+
+1.  Navigate to https://portal.azure.com and open the existing resource group. Now, open the **Azure Database Migration Service(dms62244)** which you deployed in task 2 of this exercise.
+1. Click on the **New Migration Project** to create a new migation project. </br>
+   ![](Images/31_migrationproject.jpg)
+1. On new migtaion project provide following details and then click **Create and rin activity** button. </br>
+   ![](Images/32_create.jpg)
+1. 
    
 
  
