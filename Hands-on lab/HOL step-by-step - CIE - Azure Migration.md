@@ -171,7 +171,28 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/31_migrationproject.jpg)
 1. On new migtaion project provide following details and then click **Create and run activity** button. </br>
    ![](Images/32_create.jpg)
-1. 
+1. Select source and enter source server details and click on **Save** button. 
+   * Source SQL Server instance name: Public IP Address of your sqlvm.
+   * Authentication type: Windows Authentication
+   * User Name: SQLVM\demouser
+   * Password: demo@pass123
+   * Check both connection properties, if not checked. </br>
+   ![](Images/32_savesource.jpg)
+1. Select target and enter target server details and then click on **save** button.
+   * Target Server Name: sqlserver62244.database.windows.net, enter Azure SQL Server name which you created in task 1 of this exercise.
+   * Authentication type: SQL Authentication 
+   * User Name: demouser
+   * Password: demo@pass123 </br>
+   ![](Images/33_selecttarget.jpg)
+1. Select AdventureWorks2008R2 in map to target databases. </br>
+   ![](Images/34_mapdatabase.jpg)
+1. On Migration summary enter Activity name as **MigrateToAzure** and select **Do not validate** in validation option and then clcik on **Run migration** button. </br>
+   ![](Images/35_runmigration.jpg)
+
+
+
+   
+   
    
 
  
