@@ -8,18 +8,18 @@
   - [Solution architecture](#solution-architecture)
   - [Requirements](#requirements)
 - [Exercise 1: Sign up for pre configured environment and verify subscription access](#exercise-1-sign-up-for-pre-configured-environment-and-verify-subscription-access)
-  - [Task 1: Sign Up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
-  - [Task 2: Login to Azure Portal and Verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
+  - [Task 1: Sign up for pre configured environment](#task-1-sign-up-for-pre-configured-environment)
+  - [Task 2: Login to azure portal and verify access to the Subscription](#task-2-login-to-azure-portal-and-verify-access-to-the-subscription)
 - [Exercise 2: Migrate SQL Server to Azure SQL Database Offline](#exercise-2-migrate-sql-server-to-azure-sql-database-offline)
   - [Help references](#help-references)
-  - [Task 1: Create Azure SQL Database](#task-1-create-azure-sql-database)
-  - [Task 2: Create Azure Database Migration Service](#task-2-create-azure-database-migration-service)
-  - [Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment](#task-3-run-on-prem-adventureworks2008r2-sql-db-assessment)
-  - [Task 3: Migrate the Sample Schema](#task-3-migrate-the-sample-schema)
-  - [Task 4: Create a Migration Project](#task-4-create-a-migration-project)
-  - [Task 5: Specify Source Details](#task-5-specify-source-details)
-  - [Task 6: Specify Target Details](#task-6-specify-target-details)
-  - [Task 7: Run the Migration](#task-7-run-the-migration)
+  - [Task 1: Create azure SQL database](#task-1-create-azure-sql-database)
+  - [Task 2: Create azure database migration service](#task-2-create-azure-database-migration-service)
+  - [Task 3: Run on-prem AdventureWorks2008R2 database assessment](#task-3-run-on-prem-adventureworks2008r2-database-assessment)
+  - [Task 3: Migrate the sample schema](#task-3-migrate-the-sample-schema)
+  - [Task 4: Create a migration project](#task-4-create-a-migration-project)
+  - [Task 5: Specify source details](#task-5-specify-source-details)
+  - [Task 6: Specify target details](#task-6-specify-target-details)
+  - [Task 7: Run the migration](#task-7-run-the-migration)
  
 <!-- /TOC -->
 
@@ -42,7 +42,7 @@ Here, you will sign up for the lab.
 
   Please ensure to take the values assigned to your deployment.
   
-### Task 2: Login to Azure Portal and Verify access to the Subscription
+### Task 2: Login to azure portal and verify access to the subscription
 
 In this task, you will log into the **Azure Portal** using your Azure credentials and you will verify the type of role you are assigned in this Subscription.
 1. **Navigate** to https://portal.azure.com and login (from the previous step).
@@ -58,7 +58,7 @@ In this task, you will log into the **Azure Portal** using your Azure credential
 
 In this exercise, you will deploy **SQL Database** and **Azure Database Migration Service**. After that you will validate and Migrate the **schema** of on-prem(SQL Server 2008 R2) AdventureWorks2008R2 database to Azure SQL Database using Database Migration Assistant. Then you will migrate **on-prem** offline **AdventureWorks2008R2** database to **Azure SQL Database** using Azure Migration Service of azure.
 
-### Task 1: Create Azure SQL Database
+### Task 1: Create azure SQL database
 
 1. Go to https://portal.azure.com and login with your azure credentials you got on lab details page.
 1. Click on the **+Create a resource** icon in upper left corner and then search for **SQL Database** and select **SQL Database**. Feel the details and click on the **Review + Create** button </br>
@@ -84,7 +84,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    * On Review + Create tab, review inputes which you gave and then, click on the **Create** button. </br>
      ![](Images/20_ceate.jpg)  
      
-### Task 2: Create Azure Database Migration Service
+### Task 2: Create azure database migration service
 
 1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service**. Then, select  **Azure Database Migration Service**.  </br>
    ![](Images/21_createaresource.jpg) 
@@ -98,15 +98,8 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    * Virtual network: **vNet/subnet1**, choose existing vNet.
    * Pricing Tier: Premium: 4 vCores, premium is requred for online migration. </br>
    ![](Images/24_pricingtier.jpg)
-   
-   
 
-      
-      
-   
-
-
-### Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment
+### Task 3: Run on-prem AdventureWorks2008R2 database assessment
 
 1. Go to https://portal.azure.com and login.
 1. Click on the **azure-migration-62244** Resource Group and click on the sqlvm and login to the sqlvm with Public IP or SQL VM DNS name using RDP . You can also find sqlvm admin username, password and sqlvm dns name on lab details page.
