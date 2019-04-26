@@ -15,11 +15,11 @@
   - [Task 1: Create azure SQL database](#task-1-create-azure-sql-database)
   - [Task 2: Create azure database migration service](#task-2-create-azure-database-migration-service)
   - [Task 3: Run on-prem AdventureWorks2008R2 database assessment](#task-3-run-on-prem-adventureworks2008r2-database-assessment)
-  - [Task 3: Migrate the sample schema](#task-3-migrate-the-sample-schema)
-  - [Task 4: Create a migration project](#task-4-create-a-migration-project)
-  - [Task 5: Specify source details](#task-5-specify-source-details)
-  - [Task 6: Specify target details](#task-6-specify-target-details)
-  - [Task 7: Run the migration](#task-7-run-the-migration)
+  - [Task 4: Migrate the sample schema](#task-4-migrate-the-sample-schema)
+  - [Task 5: Create a migration project](#task-5-create-a-migration-project)
+  - [Task 6: Specify source details](#task-6-specify-source-details)
+  - [Task 7: Specify target details](#task-7-specify-target-details)
+  - [Task 8: Run the migration](#task-8-run-the-migration)
  
 <!-- /TOC -->
 
@@ -130,6 +130,8 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
         ![](Images/14_connectwithsource.jpg)
     * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner.</br> 
       ![](Images/14_connectwithsource.jpg)
+      
+
 
 
 
