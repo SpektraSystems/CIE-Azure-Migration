@@ -73,12 +73,12 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Server admin login: demouser
       * Password: demo@pass123
       * Location: East US, use the Resource Group location. </br>
-        ![](Images/18_select.jpg)
+      ![](Images/18_select.jpg)
    * Want to use SQL elastic pool: No
    * Compute + Storage: click Configure database. Set the below requirements and then click on **Apply** button.
      * Set the DTUs on **100**, PLease do not try with diffrent DTUs, It will be disallowed by policy during deployment.
      * Data Max size: 250 GB </br>
-       ![](Images/19_apply.jpg)
+     ![](Images/19_apply.jpg)
    * Click on the **Review + Create** button </br>
      ![](Images/20_reviewcreate.jpg)
    * On Review + Create tab, review inputes which you gave and then, click on the **Create** button. </br>
@@ -97,7 +97,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    * Location: East US, Select the Resource Group Location.
    * Virtual network: **vNet/subnet1**, choose existing vNet.
    * Pricing Tier: Premium: 4 vCores, premium is requred for online migration. </br>
-     ![](Images/24_pricingtier.jpg)
+   ![](Images/24_pricingtier.jpg)
    
    
 
