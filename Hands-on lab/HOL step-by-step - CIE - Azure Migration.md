@@ -86,7 +86,21 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
      
 ### Task 2: Create Azure Database Migration Service
 
-1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service**.
+1. In Azure portal click on the **+Create a resource** icon in upper left corner and then search for **Azure Database Migration Service**. Then, select  **Azure Database Migration Service**.  </br>
+   ![](Images/21_createaresource.jpg) 
+1. Click on create button. </br>
+   ![](Images/22_createdms.jpg)
+1. Provide valid inputes for Azure Database migration Service and then click on the create button.
+   * Service Name: dms62244, Please use your unique id instead of 62244.
+   * Subscription: Choose Existing.
+   * Choose existing resource group
+   * Location: East US, Select the Resource Group Location.
+   * Virtual network: **vNet/subnet1**, choose existing vNet.
+   * Pricing Tier: Premium: 4 vCores, premium is requred for online migration. </br>
+     ![](Images/24_pricingtier.jpg)
+   
+   
+
       
       
    
