@@ -169,7 +169,7 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 1.  Navigate to https://portal.azure.com and open the existing resource group. Now, open the **Azure Database Migration Service(dms62244)** which you deployed in task 2 of this exercise.
 1. Click on the **New Migration Project** to create a new migation project. </br>
    ![](Images/31_migrationproject.jpg)
-1. On new migtaion project provide following details and then click **Create and rin activity** button. </br>
+1. On new migtaion project provide following details and then click **Create and run activity** button. </br>
    ![](Images/32_create.jpg)
 1. 
    
