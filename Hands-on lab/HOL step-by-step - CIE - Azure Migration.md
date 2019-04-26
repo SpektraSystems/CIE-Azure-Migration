@@ -120,18 +120,53 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
       * Project Name: **AzureDMSMigration**
       * Source server type: **SQL Server**
       * Target server type: Azure **SQL Database** </br>
-        ![](Images/12_assessment.jpg)
+      ![](Images/12_assessment.jpg)
     * Click on the **Next** button. </br>
       ![](Images/13_next.jpg)
     * Now enter the source server details and click on the **Connect** button.
       * Server name: **SQL2008R2-VM**
       * Authentication type: **Windows Authentication**
       * Check both connection properties **Encrypt connection** and **Trust server certificate**. </br>
-        ![](Images/14_connectwithsource.jpg)
-    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button i bottom right corner.</br> 
       ![](Images/14_connectwithsource.jpg)
+    * Now, check the checkbox of **SQL2008R2-VM** and **AdventureWorks2008R2**. Then, click on the **Add** button in bottom right corner.</br> 
+      ![](Images/15_addsource.jpg)
       
+### Task 4: Migrate the sample schema
 
+1. In your sqlvm, open Azure Migration Assistant if its not open and click on + icon to create a new migration project.Provide following details and the click on **Create** button.
+   * Project type: Migration
+   * Project Name: AzureSQLMigrate
+   * Source server type: SQL Server
+   * Target server type: Azure SQL Database
+   * Migration scope: Schema only </br>
+   ![](Images/25_createproject.jpg)
+1. On select source window provide following details.
+   * Server name: SQL2008R2-VM
+   * Authentication type: Windows Authentication
+   * Connection properties: check both Encrypt connection and Trust server certificate.
+   * Now, click on **Connect** button.
+   * Select AdventureWorks2008R2 databse and click on Next **button**. </br>
+   ![](Images/26_connectsource.jpg)
+1. On select target window provide following details.
+   * Server name: Provide Azure SQL Server name, which you copied earlier.
+   * Authentication type: SQL Server Authentication
+   * Username: demouser
+   * Password: demo@pass123
+   * Connection properties: check both Encrypt connection and Trust server certificate.
+   * Now, click on **Connect** button.
+   * Select AdventureWorks2008R2 databse and click on Next **button**. </br>
+   ![](Images/27_connecttarget.jpg)
+1. Click on **Generate SQL Script**. </br>
+   ![](Images/28_generatescript.jpg)
+1. Click on the **Deploy schema**. </br>
+   ![](Images/29_deployschema.jpg)
+1. After few second you will see schema migration is completed.
+   ![](Images/30_schemamigrationcomplete.jpg)
+   
+
+ 
+   
+   
 
 
 
