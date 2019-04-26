@@ -21,7 +21,7 @@
   - [Task 7: Specify target details](#task-7-specify-target-details)
   - [Task 8: Run the migration](#task-8-run-the-migration)
   - [Task 9: Monitor the migration](#task-9-monitor-the-migration)
- 
+  
 <!-- /TOC -->
 
 ## Exercise 1: Sign up for pre configured environment and verify subscription access
@@ -201,8 +201,12 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    
 ### Task 9: Monitor the migration
 
-Monitor the migration status after running the migration. </br>
+Monitor the migration status after running the migration. It will take few minutes to complete the migration and looks like below snap after completion. </br>
 ![](Images/36_monitormigration.jpg)
+
+
+
+
 
 
 
