@@ -20,6 +20,7 @@
   - [Task 6: Specify source details](#task-6-specify-source-details)
   - [Task 7: Specify target details](#task-7-specify-target-details)
   - [Task 8: Run the migration](#task-8-run-the-migration)
+  - [Task 9: Monitor the migration](#task-9-monitor-the-migration)
  
 <!-- /TOC -->
 
@@ -171,6 +172,9 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/31_migrationproject.jpg)
 1. On new migtaion project provide following details and then click **Create and run activity** button. </br>
    ![](Images/32_create.jpg)
+   
+### Task 6: Specify source details
+   
 1. Select source and enter source server details and click on **Save** button. 
    * Source SQL Server instance name: Public IP Address of your sqlvm.
    * Authentication type: Windows Authentication
@@ -178,6 +182,9 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    * Password: demo@pass123
    * Check both connection properties, if not checked. </br>
    ![](Images/32_savesource.jpg)
+   
+### Task 7: Specify target details
+
 1. Select target and enter target server details and then click on **save** button.
    * Target Server Name: sqlserver62244.database.windows.net, enter Azure SQL Server name which you created in task 1 of this exercise.
    * Authentication type: SQL Authentication 
@@ -186,8 +193,23 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/33_selecttarget.jpg)
 1. Select AdventureWorks2008R2 in map to target databases. </br>
    ![](Images/34_mapdatabase.jpg)
-1. On Migration summary enter Activity name as **MigrateToAzure** and select **Do not validate** in validation option and then clcik on **Run migration** button. </br>
+   
+### Task 8: Run the migration
+   
+1. On Migration summary enter activity name as **MigrateToAzureOffline** and select **Do not validate** in validation option and then clcik on **Run migration** button. </br>
    ![](Images/35_runmigration.jpg)
+   
+### Task 9: Monitor the migration
+
+Monitor the migration status after running the migration. </br>
+![](Images/36_monitormigration.jpg)
+
+
+
+
+   
+
+
 
 
 
