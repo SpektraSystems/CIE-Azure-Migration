@@ -15,11 +15,11 @@
   - [Task 1: Create Azure SQL Database](#task-1-create-azure-sql-database)
   - [Task 2: Create Azure Database Migration Service](#task-2-create-azure-database-migration-service)
   - [Task 3: Run on-prem AdventureWorks2008R2 SQL DB Assessment](#task-3-run-on-prem-adventureworks2008r2-sql-db-assessment)
-  - [Task 3: ](#task-3-)
-  - [Task 4: ](#task-4-)
-  - [Task 5: ](#task-5-)
-  - [Task 6: ](#task-6-)
-  - [Task 7: ](#task-7-)
+  - [Task 3: Migrate the Sample Schema](#task-3-migrate-the-sample-schema)
+  - [Task 4: Create a Migration Project](#task-4-create-a-migration-project)
+  - [Task 5: Specify Source Details](#task-5-specify-source-details)
+  - [Task 6: Specify Target Details](#task-6-specify-target-details)
+  - [Task 7: Run the Migration](#task-7-run-the-migration)
  
 <!-- /TOC -->
 
