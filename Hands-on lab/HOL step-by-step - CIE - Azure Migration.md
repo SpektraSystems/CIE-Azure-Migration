@@ -206,9 +206,11 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
 1. Monitor the migration status after running the migration. It will take few minutes to complete the migration and looks like below snap after completion. </br>
    ![](Images/36_monitormigration.jpg)
 1. After the Migration is completed. Check the all the tables are migarated successfully by running following command. </br>
-    ``` SELECT COUNT(*)
+    ``` 
+        SELECT COUNT(*)
         FROM INFORMATION_SCHEMA.TABLES
-        WHERE TABLE_TYPE = 'BASE TABLE' 
+        WHERE TABLE_TYPE = 'BASE TABLE'
+    ```
    ![](Images/40_queryazure.jpg) 
 
 
