@@ -113,6 +113,8 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/8_connect.jpg)
 1. Now check and verify **AdventureWorks2008R2** database is preloaded in Object Explorer window.
    ![](Images/9_verifydb.jpg)
+1. Run the following query to check the **number of tables** in AdventureWorks2008R2.
+   ![](Images/40_queryonprem.jpg.jpg)
 1. Now, click on the **Data Migration Assistant(DMA)** icon on taskbar.
    ![](Images/10_datamigrationassitant.jpg)
 1. In this step, we will create new assessment project.
@@ -201,8 +203,15 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    
 ### Task 9: Monitor the migration
 
-Monitor the migration status after running the migration. It will take few minutes to complete the migration and looks like below snap after completion. </br>
-![](Images/36_monitormigration.jpg)
+1. Monitor the migration status after running the migration. It will take few minutes to complete the migration and looks like below snap after completion. </br>
+   ![](Images/36_monitormigration.jpg)
+1. After the Migration is completed. Check the all the tables are migarated successfully by running following command. </br>
+    ``` SELECT COUNT(*)
+        FROM INFORMATION_SCHEMA.TABLES
+        WHERE TABLE_TYPE = 'BASE TABLE' 
+   ![](Images/40_queryazure.jpg) 
+
+
 
 
 
