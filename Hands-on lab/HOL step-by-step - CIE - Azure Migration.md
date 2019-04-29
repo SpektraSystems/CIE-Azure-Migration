@@ -113,13 +113,13 @@ In this exercise, you will deploy **SQL Database** and **Azure Database Migratio
    ![](Images/8_connect.jpg)
 1. Now check and verify **AdventureWorks2008R2** database is preloaded in Object Explorer window.
    ![](Images/9_verifydb.jpg)
-1. Run the following query to check the **number of tables** in onprem AdventureWorks2008R2. Make sure to select AdventureWorks2008R2 database is selected before executing the query. Note the count of tables from query output. </br>
+1. Run the following query to check the **number of tables** in onprem AdventureWorks2008R2. Make sure to select AdventureWorks2008R2 database is selected before executing the query. Note the tables count from query output. </br>
     ``` 
         SELECT COUNT(*)
         FROM INFORMATION_SCHEMA.TABLES
         WHERE TABLE_TYPE = 'BASE TABLE'
     ```
-   ![](Images/40_queryonprem.jpg.jpg)
+   ![](Images/40_queryonprem.jpg)
 1. Now, click on the **Data Migration Assistant(DMA)** icon on taskbar.
    ![](Images/10_datamigrationassitant.jpg)
 1. In this step, we will create new assessment project.
